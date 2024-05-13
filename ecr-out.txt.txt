@@ -1,0 +1,249 @@
+[0m[1mmodule.eks.module.kms.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.ecr.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.ecr.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.eks.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-04f1c17327f1e755d][0m
+[0m[1mmodule.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-01c1432c97b9e7a95][0m
+[0m[1mmodule.eks.aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/eks/ascode-cluster/cluster][0m
+[0m[1mmodule.vpc.aws_eip.nat[1]: Refreshing state... [id=eipalloc-0c2fba24b8c7f919d][0m
+[0m[1mmodule.ecr.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.eks.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.eks.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.eks.module.kms.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.eks.module.kms.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=1734879000][0m
+[0m[1mmodule.eks.data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].aws_iam_role.this[0]: Refreshing state... [id=ascode-cluster-wg-eks-node-group-20240513074512727600000001][0m
+[0m[1mmodule.eks.data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=1530481229][0m
+[0m[1mmodule.eks.aws_iam_role.this[0]: Refreshing state... [id=ascode-cluster-cluster-20240513074512728700000002][0m
+[0m[1mmodule.eks.module.kms.data.aws_caller_identity.current: Read complete after 0s [id=202334581163][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].data.aws_caller_identity.current: Read complete after 0s [id=202334581163][0m
+[0m[1mmodule.eks.data.aws_caller_identity.current: Read complete after 0s [id=202334581163][0m
+[0m[1mmodule.eks.data.aws_iam_session_context.current: Reading...[0m[0m
+[0m[1mmodule.eks.data.aws_iam_session_context.current: Read complete after 0s [id=arn:aws:iam::202334581163:user/HalimAWSroot][0m
+[0m[1mmodule.ecr.data.aws_caller_identity.current: Read complete after 0s [id=202334581163][0m
+[0m[1mmodule.ecr.data.aws_iam_policy_document.repository[0]: Reading...[0m[0m
+[0m[1mmodule.ecr.data.aws_iam_policy_document.repository[0]: Read complete after 0s [id=395742606][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=ascode-cluster-wg-eks-node-group-20240513074512727600000001-20240513074514151600000003][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]: Refreshing state... [id=ascode-cluster-wg-eks-node-group-20240513074512727600000001-20240513074514395400000005][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=ascode-cluster-wg-eks-node-group-20240513074512727600000001-20240513074514191700000004][0m
+[0m[1mmodule.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Refreshing state... [id=ascode-cluster-cluster-20240513074512728700000002-20240513074514764200000006][0m
+[0m[1mmodule.eks.aws_iam_role_policy_attachment.this["AmazonEKSVPCResourceController"]: Refreshing state... [id=ascode-cluster-cluster-20240513074512728700000002-20240513074514812400000007][0m
+[0m[1mmodule.eks.module.kms.data.aws_iam_policy_document.this[0]: Reading...[0m[0m
+[0m[1mmodule.eks.module.kms.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=635276492][0m
+[0m[1mmodule.eks.module.kms.aws_kms_key.this[0]: Refreshing state... [id=76112264-f06e-422a-9391-aca51a9c8dd3][0m
+[0m[1mmodule.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-0df42434a20cd7fcb][0m
+[0m[1mmodule.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-0d57426add51f40d9][0m
+[0m[1mmodule.eks.aws_security_group.cluster[0]: Refreshing state... [id=sg-0e3e4420fc9445d0c][0m
+[0m[1mmodule.vpc.aws_route_table.intra[0]: Refreshing state... [id=rtb-0050b3088afb2257d][0m
+[0m[1mmodule.vpc.aws_subnet.intra[0]: Refreshing state... [id=subnet-0da5da4a58dec766d][0m
+[0m[1mmodule.vpc.aws_subnet.intra[1]: Refreshing state... [id=subnet-0fc1c16568ed44dd0][0m
+[0m[1mmodule.eks.aws_security_group.node[0]: Refreshing state... [id=sg-0131864162dd294f4][0m
+[0m[1mmodule.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-0103a4131d8a81cdd][0m
+[0m[1mmodule.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-0e9f94b26bbb34512][0m
+[0m[1mmodule.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-00906bf319e901258][0m
+[0m[1mmodule.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-0be50ce1f522838f1][0m
+[0m[1mmodule.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-06147e774c1e6cc0c][0m
+[0m[1mmodule.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0ed9d6bc72984cc44][0m
+[0m[1mmodule.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-0a2b6f705a77f48c1][0m
+[0m[1mmodule.vpc.aws_route_table.private[1]: Refreshing state... [id=rtb-027904b1415577533][0m
+[0m[1mmodule.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-0742d2b7177e95892][0m
+[0m[1mmodule.eks.module.kms.aws_kms_alias.this["cluster"]: Refreshing state... [id=alias/eks/ascode-cluster][0m
+[0m[1mmodule.vpc.aws_route_table_association.intra[1]: Refreshing state... [id=rtbassoc-00c444ca630fb7180][0m
+[0m[1mmodule.vpc.aws_route_table_association.intra[0]: Refreshing state... [id=rtbassoc-011a7cb5f591c1349][0m
+[0m[1mmodule.eks.aws_iam_policy.cluster_encryption[0]: Refreshing state... [id=arn:aws:iam::202334581163:policy/ascode-cluster-cluster-ClusterEncryption20240513074538966600000010][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_443"]: Refreshing state... [id=sgrule-209453751][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Refreshing state... [id=sgrule-1448760169][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]: Refreshing state... [id=sgrule-1526631820][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_6443_webhook"]: Refreshing state... [id=sgrule-564616323][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Refreshing state... [id=sgrule-855335076][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]: Refreshing state... [id=sgrule-1867030943][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Refreshing state... [id=sgrule-42447943][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Refreshing state... [id=sgrule-387630315][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["egress_all"]: Refreshing state... [id=sgrule-1825855207][0m
+[0m[1mmodule.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Refreshing state... [id=sgrule-22991259][0m
+[0m[1mmodule.eks.aws_security_group_rule.cluster["ingress_nodes_443"]: Refreshing state... [id=sgrule-273295893][0m
+[0m[1mmodule.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-0344585382a01ee95][0m
+[0m[1mmodule.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-09aef303b97736795][0m
+[0m[1mmodule.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-0742d2b7177e958921080289494][0m
+[0m[1mmodule.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-0970dd767417a5e50][0m
+[0m[1mmodule.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-0b28bdf91ca27cea6][0m
+[0m[1mmodule.vpc.aws_nat_gateway.this[1]: Refreshing state... [id=nat-0910d79fa2d9cf4cb][0m
+[0m[1mmodule.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-0599c1b96f4167a9d][0m
+[0m[1mmodule.eks.aws_iam_role_policy_attachment.cluster_encryption[0]: Refreshing state... [id=ascode-cluster-cluster-20240513074512728700000002-20240513074539832100000011][0m
+[0m[1mmodule.vpc.aws_route.private_nat_gateway[1]: Refreshing state... [id=r-rtb-027904b14155775331080289494][0m
+[0m[1mmodule.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-0a2b6f705a77f48c11080289494][0m
+[0m[1mmodule.eks.aws_eks_cluster.this[0]: Refreshing state... [id=ascode-cluster][0m
+[0m[1mmodule.eks.aws_ec2_tag.cluster_primary_security_group["Example"]: Refreshing state... [id=sg-0ac4d1e38e8a5f9ee,Example][0m
+[0m[1mmodule.eks.data.aws_eks_addon_version.this["vpc-cni"]: Reading...[0m[0m
+[0m[1mmodule.eks.data.aws_eks_addon_version.this["kube-proxy"]: Reading...[0m[0m
+[0m[1mmodule.eks.data.aws_eks_addon_version.this["coredns"]: Reading...[0m[0m
+[0m[1mmodule.eks.time_sleep.this[0]: Refreshing state... [id=2024-05-13T07:56:45Z][0m
+[0m[1mmodule.eks.data.tls_certificate.this[0]: Reading...[0m[0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].aws_launch_template.this[0]: Refreshing state... [id=lt-0245c1397e56bcc81][0m
+[0m[1mmodule.eks.data.aws_eks_addon_version.this["vpc-cni"]: Read complete after 0s [id=vpc-cni][0m
+[0m[1mmodule.eks.data.aws_eks_addon_version.this["coredns"]: Read complete after 0s [id=coredns][0m
+[0m[1mmodule.eks.data.aws_eks_addon_version.this["kube-proxy"]: Read complete after 0s [id=kube-proxy][0m
+[0m[1mmodule.eks.module.eks_managed_node_group["ascode-cluster-wg"].aws_eks_node_group.this[0]: Refreshing state... [id=ascode-cluster:ascode-cluster-wg-20240513075646641300000014][0m
+[0m[1mmodule.eks.data.tls_certificate.this[0]: Read complete after 1s [id=99d41e43229a4cdaf4141f3e8310e6d95c31dab9][0m
+[0m[1mmodule.eks.aws_iam_openid_connect_provider.oidc_provider[0]: Refreshing state... [id=arn:aws:iam::202334581163:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/A47DB255113B3D6D09804893FD4B6C5C][0m
+[0m[1mmodule.eks.aws_eks_addon.this["vpc-cni"]: Refreshing state... [id=ascode-cluster:vpc-cni][0m
+[0m[1mmodule.eks.aws_eks_addon.this["kube-proxy"]: Refreshing state... [id=ascode-cluster:kube-proxy][0m
+[0m[1mmodule.eks.aws_eks_addon.this["coredns"]: Refreshing state... [id=ascode-cluster:coredns][0m
+
+[1m[36mNote:[0m[1m Objects have changed outside of Terraform
+[0m
+Terraform detected the following changes made outside of Terraform since the
+last "terraform apply" which may have affected this plan:
+
+[1m  # module.eks.module.eks_managed_node_group["ascode-cluster-wg"].aws_eks_node_group.this[0][0m has changed
+[0m  [33m~[0m[0m resource "aws_eks_node_group" "this" {
+        id                     = "ascode-cluster:ascode-cluster-wg-20240513075646641300000014"
+      [32m+[0m[0m labels                 = {}
+        tags                   = {
+            "Example"  = "ascode-cluster"
+            "ExtraTag" = "helloworld"
+            "Name"     = "ascode-cluster-wg"
+        }
+        [90m# (15 unchanged attributes hidden)[0m[0m
+
+        [90m# (4 unchanged blocks hidden)[0m[0m
+    }
+
+
+Unless you have made equivalent changes to your configuration, or ignored the
+relevant attributes using ignore_changes, the following plan may include
+actions to undo or respond to these changes.
+[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.ecr.aws_ecr_lifecycle_policy.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_ecr_lifecycle_policy" "this" {
+      [32m+[0m[0m id          = (known after apply)
+      [32m+[0m[0m policy      = jsonencode(
+            {
+              [32m+[0m[0m rules = [
+                  [32m+[0m[0m {
+                      [32m+[0m[0m action       = {
+                          [32m+[0m[0m type = "expire"
+                        }
+                      [32m+[0m[0m description  = "Keep last 30 images"
+                      [32m+[0m[0m rulePriority = 1
+                      [32m+[0m[0m selection    = {
+                          [32m+[0m[0m countNumber   = 30
+                          [32m+[0m[0m countType     = "imageCountMoreThan"
+                          [32m+[0m[0m tagPrefixList = [
+                              [32m+[0m[0m "v",
+                            ]
+                          [32m+[0m[0m tagStatus     = "tagged"
+                        }
+                    },
+                ]
+            }
+        )
+      [32m+[0m[0m registry_id = (known after apply)
+      [32m+[0m[0m repository  = "private-example"
+    }
+
+[1m  # module.ecr.aws_ecr_repository.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_ecr_repository" "this" {
+      [32m+[0m[0m arn                  = (known after apply)
+      [32m+[0m[0m id                   = (known after apply)
+      [32m+[0m[0m image_tag_mutability = "IMMUTABLE"
+      [32m+[0m[0m name                 = "private-example"
+      [32m+[0m[0m registry_id          = (known after apply)
+      [32m+[0m[0m repository_url       = (known after apply)
+      [32m+[0m[0m tags                 = {
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Terraform"   = "true"
+        }
+      [32m+[0m[0m tags_all             = {
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Terraform"   = "true"
+        }
+
+      [32m+[0m[0m encryption_configuration {
+          [32m+[0m[0m encryption_type = "AES256"
+          [32m+[0m[0m kms_key         = (known after apply)
+        }
+
+      [32m+[0m[0m image_scanning_configuration {
+          [32m+[0m[0m scan_on_push = true
+        }
+    }
+
+[1m  # module.ecr.aws_ecr_repository_policy.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_ecr_repository_policy" "this" {
+      [32m+[0m[0m id          = (known after apply)
+      [32m+[0m[0m policy      = jsonencode(
+            {
+              [32m+[0m[0m Statement = [
+                  [32m+[0m[0m {
+                      [32m+[0m[0m Action    = [
+                          [32m+[0m[0m "ecr:ListTagsForResource",
+                          [32m+[0m[0m "ecr:ListImages",
+                          [32m+[0m[0m "ecr:GetRepositoryPolicy",
+                          [32m+[0m[0m "ecr:GetLifecyclePolicyPreview",
+                          [32m+[0m[0m "ecr:GetLifecyclePolicy",
+                          [32m+[0m[0m "ecr:GetDownloadUrlForLayer",
+                          [32m+[0m[0m "ecr:GetAuthorizationToken",
+                          [32m+[0m[0m "ecr:DescribeRepositories",
+                          [32m+[0m[0m "ecr:DescribeImages",
+                          [32m+[0m[0m "ecr:DescribeImageScanFindings",
+                          [32m+[0m[0m "ecr:BatchGetImage",
+                          [32m+[0m[0m "ecr:BatchCheckLayerAvailability",
+                        ]
+                      [32m+[0m[0m Effect    = "Allow"
+                      [32m+[0m[0m Principal = {
+                          [32m+[0m[0m AWS = "arn:aws:iam::012345678901:role/terraform"
+                        }
+                      [32m+[0m[0m Sid       = "PrivateReadOnly"
+                    },
+                  [32m+[0m[0m {
+                      [32m+[0m[0m Action    = [
+                          [32m+[0m[0m "ecr:UploadLayerPart",
+                          [32m+[0m[0m "ecr:PutImage",
+                          [32m+[0m[0m "ecr:InitiateLayerUpload",
+                          [32m+[0m[0m "ecr:CompleteLayerUpload",
+                        ]
+                      [32m+[0m[0m Effect    = "Allow"
+                      [32m+[0m[0m Principal = {
+                          [32m+[0m[0m AWS = "arn:aws:iam::012345678901:role/terraform"
+                        }
+                      [32m+[0m[0m Sid       = "ReadWrite"
+                    },
+                ]
+              [32m+[0m[0m Version   = "2012-10-17"
+            }
+        )
+      [32m+[0m[0m registry_id = (known after apply)
+      [32m+[0m[0m repository  = "private-example"
+    }
+
+[1mPlan:[0m 3 to add, 0 to change, 0 to destroy.
+[0m[33m╷[0m[0m
+[33m│[0m [0m[1m[33mWarning: [0m[0m[1mArgument is deprecated[0m
+[33m│[0m [0m
+[33m│[0m [0m[0m  with module.eks.aws_eks_addon.this["vpc-cni"],
+[33m│[0m [0m  on .terraform\modules\eks\main.tf line 392, in resource "aws_eks_addon" "this":
+[33m│[0m [0m 392:   resolve_conflicts        = [4mtry(each.value.resolve_conflicts, "OVERWRITE")[0m[0m
+[33m│[0m [0m
+[33m│[0m [0mThe "resolve_conflicts" attribute can't be set to "PRESERVE" on initial resource creation. Use "resolve_conflicts_on_create" and/or "resolve_conflicts_on_update" instead
+[33m│[0m [0m
+[33m│[0m [0m(and 5 more similar warnings elsewhere)
+[33m╵[0m[0m
+[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.
