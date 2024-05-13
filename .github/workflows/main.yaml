@@ -62,14 +62,14 @@ jobs:
         run: |
           git clone https://${{ secrets.HELM_ACCESS_KEY }}:${{ secrets.HELM_SECRET_KEY }}@github.com/andrewseif/simple-go-app.git
           ls -la
-
-      - name: Change Directory
-        run: |
+          git checkout helm
+          git pull
           cd http-server
           git config --global user.email "go@pipeline"
           git config --global user.name "go"
-          git checkout helm
-          git pull
+          
+          
+
 
       - name: Update Helm Chart
         run: |
