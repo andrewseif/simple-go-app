@@ -28,17 +28,11 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: 'http-server:go-${{ github.sha }}'
-          format: 'table'
+          format: 'table, template'
+          template: '@/contrib/sarif.tpl'
           exit-code: '1'
           ignore-unfixed: true
           vuln-type: 'os,library'
-          severity: 'CRITICAL,HIGH'
-      - name: Run Trivy vulnerability scanner in docker mode
-        uses: aquasecurity/trivy-action@master
-        with:
-          image-ref: 'http-server:go-${{ github.sha }}'
-          format: 'template'
-          template: '@/contrib/sarif.tpl'
           output: 'trivy-results-docker.sarif'
           severity: 'CRITICAL,HIGH'
 
