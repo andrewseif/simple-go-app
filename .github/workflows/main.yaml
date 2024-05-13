@@ -61,6 +61,9 @@ jobs:
       - name: Clone Repository
         run: |
           git clone https://${{ secrets.HELM_ACCESS_KEY }}:${{ secrets.HELM_SECRET_KEY }}@github.com/andrewseif/simple-go-app.git
+
+      - name: Change Directory
+        run: |
           cd http-server
           git config --global user.email "go@pipeline"
           git config --global user.name "go"
