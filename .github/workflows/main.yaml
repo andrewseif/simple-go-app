@@ -55,30 +55,30 @@ jobs:
           docker tag http-server:go-${{ github.sha }} 202334581163.dkr.ecr.us-east-1.amazonaws.com/http-server:go-${{ github.sha }}
           docker push 202334581163.dkr.ecr.us-east-1.amazonaws.com/http-server:go-${{ github.sha }}
 
-  # update:
-  #   runs-on: ubuntu-latest
-  #   needs: build_and_push
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v3
+  update:
+    runs-on: ubuntu-latest
+    needs: build_and_push
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
 
-  #     - name: Clone Repository
-  #       run: |
-  #         git clone https://${{ secrets.HELM_ACCESS_KEY }}:${{ secrets.HELM_SECRET_KEY }}@github.com/andrewseif/http_server.git
-  #         cd http_server
-  #         git config --global user.email "go@pipeline"
-  #         git config --global user.name "go"
-  #         git checkout helm
-  #         git pull
+      - name: Clone Repository
+        run: |
+          git clone https://${{ secrets.HELM_ACCESS_KEY }}:${{ secrets.HELM_SECRET_KEY }}@github.com/andrewseif/http_server.git
+          cd http_server
+          git config --global user.email "go@pipeline"
+          git config --global user.name "go"
+          git checkout helm
+          git pull
 
-  #     - name: Update Helm Chart
-  #       run: |
-  #         yq eval -i '.image.tag = "go-${{ github.sha }}"' http-server/values.yaml
-  #         echo "http-server image tag updated"
+      - name: Update Helm Chart
+        run: |
+          yq eval -i '.image.tag = "go-${{ github.sha }}"' http-server/values.yaml
+          echo "http-server image tag updated"
 
-  #     - name: Commit and Push Changes
-  #       run: |
-  #         git add .
-  #         git commit -m "Edit tag value for http-server image go-${{ github.sha }}"
-  #         git push origin helm
+      - name: Commit and Push Changes
+        run: |
+          git add .
+          git commit -m "Edit tag value for http-server image go-${{ github.sha }}"
+          git push origin helm
