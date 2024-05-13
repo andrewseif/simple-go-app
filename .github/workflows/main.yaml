@@ -61,6 +61,7 @@ jobs:
       - name: Clone Repository
         run: |
           git clone https://${{ secrets.HELM_ACCESS_KEY }}:${{ secrets.HELM_SECRET_KEY }}@github.com/andrewseif/simple-go-app.git
+          ls -la
 
       - name: Change Directory
         run: |
