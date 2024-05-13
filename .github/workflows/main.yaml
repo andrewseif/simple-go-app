@@ -63,7 +63,7 @@ jobs:
           git clone https://${{ secrets.HELM_ACCESS_KEY }}:${{ secrets.HELM_SECRET_KEY }}@github.com/andrewseif/simple-go-app.git
           ls -la
           git pull
-          git checkout helm
+          git checkout helm-charts
           git pull
           cd http-server
           git config --global user.email "go@pipeline"
@@ -81,4 +81,4 @@ jobs:
         run: |
           git add .
           git commit -m "Edit tag value for http-go-server image go-${{ github.sha }}"
-          git push origin helm
+          git push origin helm-charts
