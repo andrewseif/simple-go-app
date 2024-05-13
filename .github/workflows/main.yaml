@@ -10,7 +10,7 @@ jobs:
   #   runs-on: ubuntu-latest
   #   steps:
   #     - name: Check out code
-  #       uses: actions/checkout@v3
+  #       uses: actions/checkout@v4
 
   #     - name: Set up QEMU
   #       uses: docker/setup-qemu-action@v1
@@ -55,30 +55,17 @@ jobs:
     # needs: build_and_push
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
-
-
-      - name: Clone Repository
-        run: |
-          git clone https://${{ secrets.HELM_ACCESS_KEY }}:${{ secrets.HELM_SECRET_KEY }}@github.com/andrewseif/simple-go-app.git
-          ls -la
-          git pull
-          git checkout helm-charts
-          git pull
-          cd http-server
-          git config --global user.email "go@pipeline"
-          git config --global user.name "go"
-
+        uses: actions/checkout@v4
+        with:
+          ref: helm-charts
           
-
-
       - name: Update Helm Chart
         run: |
           yq eval -i '.image.tag = "go-${{ github.sha }}"' http-server/values.yaml
           echo "simple go app image tag updated"
 
-      - name: Commit and Push Changes
-        run: |
-          git add .
-          git commit -m "Edit tag value for http-go-server image go-${{ github.sha }}"
-          git push origin helm-charts
+      - name: Commit and push changes
+        uses: devops-infra/action-commit-push@v0.3
+        with:
+          github_token: ${{ secrets.REPO_PUSH_KEY }}
+          commit_message: update simple-go-app image tag to go-${{ github.sha }}
