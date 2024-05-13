@@ -65,7 +65,7 @@ jobs:
 
       - name: Clone Repository
         run: |
-          git clone https://${{ secrets.HELM_ACCESS_KEY }}:${{ secrets.HELM_SECRET_KEY }}@github.com/andrewseif/http_server.git
+          git clone https://${{ secrets.HELM_ACCESS_KEY }}:${{ secrets.HELM_SECRET_KEY }}@github.com/andrewseif/simple-go-app.git
           cd http_server
           git config --global user.email "go@pipeline"
           git config --global user.name "go"
@@ -75,10 +75,10 @@ jobs:
       - name: Update Helm Chart
         run: |
           yq eval -i '.image.tag = "go-${{ github.sha }}"' http-server/values.yaml
-          echo "http-server image tag updated"
+          echo "simple go app image tag updated"
 
       - name: Commit and Push Changes
         run: |
           git add .
-          git commit -m "Edit tag value for http-server image go-${{ github.sha }}"
+          git commit -m "Edit tag value for http-go-server image go-${{ github.sha }}"
           git push origin helm
