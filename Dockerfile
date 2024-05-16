@@ -11,7 +11,7 @@ COPY main.go .
 
 RUN go build -o /simple-go-app main.go
 
-FROM gcr.io/distroless/base-debian12
+FROM golang:1.21.3-bookworm
 
 COPY --from=build /simple-go-app /simple-go-app
 
