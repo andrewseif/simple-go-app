@@ -152,7 +152,7 @@ I opted for a single pod in this setup, but in a production environment, the con
 
 To ensure zero downtime during updates, you might consider using Pod Disruption Budgets (PDB). However, I didn't include PDB in the Helm chart to maintain its beginner-friendly nature.
 
-Additionally, I left the service type as LoadBalancer, which is suitable for local environments. However, in production, the setup differs significantly. On-premise environments typically utilize a combination of reverse proxies, Keepalived, and Ingress to expose applications. This approach is often referred to as the "Hard Way," or alternatively, you can leverage modern solutions like the Gateway API.
+Additionally, I left the service type as LoadBalancer, which is suitable for local environments. However, in production, the setup differs significantly. On-premise environments typically utilize a combination of reverse proxies, Keepalived, and Ingress to expose applications. This approach is often referred to as the "Hard Way," or alternatively, you can leverage the new Gateway API.
 
-If you deploy the Helm chart locally and attempt to retrieve the service's LoadBalancer IP (svc:lb), you'll notice that the external IP remains in the "pending" state. This is because LoadBalancer type services are not supported in local environments where there is no Load Balancer infrastructure available.
+If you deploy the Helm chart locally and attempt to retrieve the service's LoadBalancer IP (svc:lb), you'll notice that the external IP remains in the "pending" state. Which is the expected behaviour.
 
